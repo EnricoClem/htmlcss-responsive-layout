@@ -9,6 +9,11 @@ ul, ol, menu {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 
 /* Contaier settings */
 
@@ -28,6 +33,14 @@ ul, ol, menu {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 32px;
 }
 
 
@@ -51,4 +64,33 @@ ul, ol, menu {
 
 .col-9 {
     width: calc(9 * 100% / 12);
+}
+
+
+/* Button settings */
+
+[class^="button"] {
+    border-radius: 999px;
+}
+
+.button-head {
+    color: black;
+    background-color: white;
+    padding: 15px;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #0084fd;
+}
+
+header .container {
+    color: white;
+    line-height: 76px;
+}
+
+.logo-head {
+    object-fit: contain;
 }
