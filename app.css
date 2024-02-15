@@ -31,7 +31,7 @@ a {
 
 /* Row and flex settings */
 
-[class^="row"] {
+[class*="row"] {
     display: flex;
     flex-wrap: wrap;
 }
@@ -42,6 +42,11 @@ a {
 
 .gap {
     gap: 32px;
+}
+
+.stretch {
+    display: flex;
+    align-items: stretch;
 }
 
 
@@ -80,6 +85,12 @@ a {
     padding: 15px;
 }
 
+.button-blue {
+    color: white;
+    background-color: #0084fd;
+    padding: 15px 60px;
+}
+
 
 /* HEADER */
 
@@ -114,11 +125,11 @@ header {
 /* BODY hero */
 
 .container-hero {
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 [class^="card"] {
-    margin: 24px;
+    margin: 12px;
     border-radius: 20px;
 }
 
@@ -132,6 +143,10 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+.col-6.card-content {
+    align-items: flex-start;
 }
 
 .card-blue .fa-solid {
@@ -153,7 +168,11 @@ header {
     text-align: center;
 }
 
-
+.col-6.phone {
+    height: 270px;
+    object-fit: contain;
+    margin-top: auto;
+}
 
 
 
