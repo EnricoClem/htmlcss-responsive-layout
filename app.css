@@ -223,8 +223,19 @@ header {
 /* PHONE */
 @media screen and (max-width: 375px) {
     
-    .container {
+    .container-head {
         max-width: 375px;
+    }
+    
+    .container-hero {
+        max-width: 375px;
+        padding: 25px 12px;
+    }
+
+    .col-8,
+    .col-6,
+    .col-4 {
+        width: 100%;
     }
 
 }
