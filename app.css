@@ -17,9 +17,10 @@ a {
 
 /* Contaier settings */
 
-.container {
+[class^="container"] {
     width: 1190px;
     margin: 0 auto;
+    padding: 80px 0;
 }
 
 .container-sm {
@@ -86,9 +87,10 @@ header {
     background-color: #0084fd;
 }
 
-header .container {
+.container-head {
     color: white;
     line-height: 76px;
+    padding: 0 24px;
 }
 
 .logo-head {
@@ -106,6 +108,22 @@ header .container {
     margin: 6px 0;
     background-color: white;
     border-radius: 999px;
+}
+
+
+/* BODY hero */
+
+.container-hero {
+    padding-top: 50px;
+}
+
+[class^="card"] {
+    margin: 24px;
+    border-radius: 20px;
+}
+
+.card-blue {
+    background-color: #b5ddff;
 }
 
 
