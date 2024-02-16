@@ -71,7 +71,7 @@ img {
 
 .button-blue {
     color: white;
-    background-color: #0084fd;
+    background-color: var(--dark-blue);
     padding: 15px 60px;
 }
 
@@ -80,6 +80,13 @@ img {
     color: black;
     padding: 10px 13px;
     border-radius: 50%;
+}
+
+.button-purple {
+    color: white;
+    background-color: var(--purple);
+    padding: 15px 60px;
+    width: fit-content;
 }
 
 
@@ -232,14 +239,11 @@ img {
     margin-bottom: 120px;
 }
 
-.testimonial .container {
-    padding: 12px;
-}
-
 .row-testimonial {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 12px;
 }
 
 .intro-testimonial {
@@ -283,6 +287,42 @@ img {
 
 .signature {
     padding-top: 35px;
+}
+
+
+/* MAIN - benefits */
+
+.benefits-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.row-benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-benefits li {
+    padding: 12px;
+}
+
+.benefits-card {
+    background-color: white;
+    border-radius: 16px;
+    color: var(--purple);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefits-number {
+    font-size: 60px;
+}
+
+.benefits-name {
+    font-size: 25px;
 }
 
 
@@ -344,6 +384,10 @@ img {
         gap: 60px;
     }
 
+    .row-benefits .col-lg-4 {
+        width: calc(4 * 100% / 12);
+    }
+
 }
 
 /* Larghezza TABLET o superiore */
@@ -384,6 +428,10 @@ img {
         padding: 30px;
     }
 
+    .benefits-number {
+        font-size: 80px;
+    }
+
 }
 
 /* Larghezza SOLO TABLET */
@@ -395,6 +443,10 @@ img {
 
     .intro-testimonial h2 {
         font-size: 38px;
+    }
+
+    .row-benefits .col-md-6 {
+        width: calc(6 * 100% / 12);
     }
 
 }
