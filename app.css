@@ -198,6 +198,11 @@ img {
     padding: 12px;
 }
 
+.row-planning {
+    display: flex;
+    flex-direction: column;
+}
+
 .card-dev {
     color: black;
     background-color: white;
@@ -207,6 +212,12 @@ img {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.title-planning {
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 
@@ -237,6 +248,11 @@ img {
 
     .card-landscape .card-phone img {
         margin: 0 auto;
+    }
+
+    .row-planning {
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     .col-lg-6 {
@@ -276,6 +292,19 @@ img {
     .card-dev {
         padding: 30px;
         margin-left: 12px;
+    }
+
+    .title-planning {
+        padding-top: 130px;
+    }
+
+}
+
+/* Larghezza SOLO TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .title-planning {
+        font-size: 60px;
     }
 
 }
