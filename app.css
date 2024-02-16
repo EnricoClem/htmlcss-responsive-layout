@@ -22,6 +22,10 @@ a {
     color: currentColor;
 }
 
+p {
+    line-height: 2em;
+}
+
 img {
     width: 100%;
 }
@@ -235,6 +239,7 @@ img {
 .row-testimonial {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .intro-testimonial {
@@ -251,6 +256,36 @@ img {
     font-size: 32px;
     padding: 40px 0;
 }
+
+.card-testimonial {
+    color: white;
+    background-color: var(--purple);
+    padding: 30px 10px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-profile {
+    width: 200px;
+}
+
+.testimonial-profile img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.signature {
+    padding-top: 35px;
+}
+
+
 
 
 
@@ -301,6 +336,14 @@ img {
         justify-content: center;
     }
 
+    .intro-testimonial h2 {
+        font-size: 45px;
+    }
+
+    .card-testimonial {
+        gap: 60px;
+    }
+
 }
 
 /* Larghezza TABLET o superiore */
@@ -331,6 +374,16 @@ img {
         padding-top: 130px;
     }
 
+    .card-testimonial {
+        text-align: left;
+    }
+
+    .card-testimonial {
+        flex-direction: row;
+        gap: 25px;
+        padding: 30px;
+    }
+
 }
 
 /* Larghezza SOLO TABLET */
@@ -338,6 +391,10 @@ img {
     
     .title-planning {
         font-size: 60px;
+    }
+
+    .intro-testimonial h2 {
+        font-size: 38px;
     }
 
 }
