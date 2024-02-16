@@ -1,6 +1,7 @@
 :root {
     --dark-blue: #0084fd;  
     --light-blue: #b5ddff;
+    --purple: #9792e4;
 }
 
 /* General rules ____________________ */
@@ -178,6 +179,15 @@ img {
 }
 
 
+/* MAIN - planning */
+
+.planning {
+    background-color: var(--purple);
+    color: white;
+    padding: 60px 0;
+}
+
+
 
 
 
@@ -207,6 +217,10 @@ img {
         margin: 0 auto;
     }
 
+    .col-lg-6 {
+        width: calc(6 * 100% / 12);
+    }
+
 }
 
 /* Larghezza TABLET o superiore */
@@ -222,6 +236,10 @@ img {
 
     .card-landscape .card-phone img {
         margin: 0;
+    }
+
+    .planning {
+        padding-top: 120px;
     }
 
 }
