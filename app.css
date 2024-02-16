@@ -1,3 +1,10 @@
+:root {
+    --dark-blue: #0084fd;  
+    --light-blue: #b5ddff;
+}
+
+/* General rules ____________________ */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,62 +21,34 @@ a {
     color: currentColor;
 }
 
+img {
+    width: 100%;
+}
 
-/* Contaier settings */
 
-[class^="container"] {
-    width: 1190px;
+/* Layout ____________________ */
+
+.container,
+.container-sm {
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 0 12px;
+}
+
+.container {
+    max-width: 1137px;
 }
 
 .container-sm {
-    width: 925px;
-    margin: 0 auto;
+    max-width: 880px;
 }
 
-
-/* Row and flex settings */
-
-[class*="row"] {
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.between {
-    justify-content: space-between;
-}
-
-.gap {
-    gap: 32px;
-}
-
-.stretch {
-    display: flex;
-    align-items: stretch;
-}
-
-
-/* Column settings */
-
-.col-3 {
-    width: calc(3 * 100% / 12);
-}
-
-.col-4 {
-    width: calc(4 * 100% / 12);
-}
-
-.col-6 {
-    width: calc(6 * 100% / 12);
-}
-
-.col-8 {
-    width: calc(8 * 100% / 12);
-}
-
-.col-9 {
-    width: calc(9 * 100% / 12);
+.col-12 {
+    width: calc(12 * 100% /12);
 }
 
 
@@ -94,87 +73,109 @@ a {
 
 /* HEADER */
 
-header {
-    background-color: #0084fd;
-}
-
-.container-head {
-    color: white;
-    line-height: 76px;
-    padding: 0 24px;
-}
-
-.logo-head {
-    object-fit: contain;
-}
-
-.hamburger {
+.main-menu {
     display: none;
-    margin: auto 0;
+    gap: 30px;
+    align-items: center;
 }
 
-.burger-line {
-    width: 26px;
-    height: 3px;
-    margin: 6px 0;
-    background-color: white;
-    border-radius: 999px;
+.logo {
+    display: block;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.fa-bars {
+    font-size: 24px;
+}
+
+.page-header {
+    color: white;
+    background-color: var(--dark-blue);
+    padding: 16px 0;
+}
+
+.main-menu .menu-item {
+    display: block;
+    padding: 0 20px;
+    line-height: 32px;
 }
 
 
-/* BODY hero */
+/* MAIN - hero */
 
-.container-hero {
-    padding-top: 25px;
+.hero {
+    padding: 50px 0;
 }
 
-[class^="card"] {
-    margin: 12px;
-    border-radius: 20px;
+.card {
+    padding: 12px;
 }
 
-.card-blue {
-    background-color: #b5ddff;
+.feature-card {
+    background-color: var(--light-blue);
+    border-radius: 16px;
 }
 
-.card-content {
-    padding: 30px;
+[class^="col-"] > .card {
+    height: 100%;
+}
+
+.card-body {
+    padding: 30px 25px;
+}
+
+.feature-card .card-body {
     display: flex;
     flex-direction: column;
+    gap: 28px;
     align-items: center;
-    gap: 30px;
+    text-align: center;
 }
 
-.col-6.card-content {
-    align-items: flex-start;
-}
-
-.card-blue .fa-solid {
-    color: #0084fd;
+.feature-card .fa-solid {
+    color: var(--dark-blue);
     font-size: 80px;
 }
 
-.title-card {
-    color: #0084fd;
+.feature-card .card-body p {
+    line-height: 2em;
+}
+
+.feature-card.card-landscape .card-body {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.feature-card.card-landscape > * {
+    display: block;
+    width: 100%;
+}
+
+.card-title {
     font-size: 20px;
-    text-align: center;
+    color: var(--dark-blue);
 }
 
-.p-card {
-    color: rgb(104, 104, 104);
-    line-height: 25px;
+.card-landscape .card-phone img {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
 }
 
-.centered {
-    text-align: center;
-}
-
-.col-6.phone {
-    height: 270px;
-    object-fit: contain;
+.feature-card .card-phone {
     margin-top: auto;
 }
 
+.card-phone img {
+    height: 270px;
+    object-fit: contain;
+}
 
 
 
@@ -182,60 +183,45 @@ header {
 
 /* MEDIA QUERY ------------------------------------------ */
 
-/* TABLET */
-@media screen and (min-width: 375px) and (max-width: 675px) {
-
-    /* Header */
-
-    .container-head {
-        max-width: 675px;
-    }
-
-    .row-head {
-        padding: 15px 30px;
-    }
-
-    .row-nav {
-        display: none;
+/* Larghezza MONITOR */
+@media (min-width: 992px) {
+    
+    .main-menu {
+        display: flex;
     }
 
     .hamburger {
-        display: block;
+        display: none;
     }
 
-    /* BODY - Hero */
-
-    .container-hero {
-        max-width: 675px;
-        padding: 25px 12px;
+    .feature-card.card-landscape > * {
+        width: 50%;
     }
 
-    .card-blue.row {
-        flex-direction: column;
+    .feature-card.card-landscape {
+        display: flex;
+        height: 100%;
     }
 
-    .card-blue [class^="col-6"] {
-        width: 100%;
+    .card-landscape .card-phone img {
+        margin: 0 auto;
     }
 
 }
 
-/* PHONE */
-@media screen and (max-width: 375px) {
+/* Larghezza TABLET o superiore */
+@media (min-width: 768px) {
     
-    .container-head {
-        max-width: 375px;
-    }
-    
-    .container-hero {
-        max-width: 375px;
-        padding: 25px 12px;
+    .col-md-4 {
+        width: calc(4 * 100% / 12);
     }
 
-    .col-8,
-    .col-6,
-    .col-4 {
-        width: 100%;
+    .col-md-8 {
+        width: calc(8 * 100% / 12);
+    }
+
+    .card-landscape .card-phone img {
+        margin: 0;
     }
 
 }

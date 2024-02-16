@@ -11,93 +11,114 @@
 
     <!-- HEADER BAR -->
     <header>
-        <div class="container-head">
-            <div class="row-head between">
-                <!-- LOGO -->
-                <img class="logo-head" src="./img/logo.png" alt="">
-                <!-- NAV hamburger -->
-                <div class="hamburger">
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
+        <div class="page-header">
+            <div class="container">
+                <div class="row nav">
+                    <!-- LOGO -->
+                    <div>
+                        <img class="logo" src="./img/logo.png" alt="">
+                    </div>
+                    <!-- NAV hamburger -->
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- NAV -->
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#">Planning</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="button-head">
+                            <a href="#">Get Started</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- NAV -->
-                <ul class="row-nav gap">
-                    <li>
-                        <a href="#">Planning</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="button-head">Get Started</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </header>
 
-    <body>
+    <main>
 
         <!-- HERO with cards -->
-        <div class="container-hero">
-            <div class="row">
-                <div class="col-8 stretch">
-                    <div class="card-blue row">
-                        <div class="col-6 card-content">
-                            <h4 class="title-card">Get a demo application</h4>
-                            <p class="p-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
-                            <a class="button-blue" href="#"> App Store</a>
-                        </div>
-                        <img class="col-6 phone" src="./img/phone.png" alt="">
-                    </div>
-                </div>
-                <div class="col-4 stretch">
-                    <div class="card-blue">
-                        <div class="card-content">
-                            <i class="fa-solid fa-file-code"></i>
-                            <h4 class="title-card">Clean Code</h4>
-                            <p class="p-card centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <!-- CARD 1 (large) -->
+                    <div class="col-12 col-md-8">
+                        <div class="card">
+                            <div class="feature-card card-landscape">
+                                <div class="card-body">
+                                    <h4 class="card-title">Get a demo application</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                                    <a href="#" class="button-blue"> App Store</a>
+                                </div>
+                                <div class="card-phone">
+                                    <img src="./img/phone.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-blue">
-                        <div class="card-content">
-                            <i class="fa-solid fa-compass-drafting"></i>
-                            <h4 class="title-card">Webdesign</h4>
-                            <p class="p-card centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                    <!-- CARD 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="feature-card">
+                                <div class="card-body">
+                                    <div class="fa-solid fa-file-code"></div>
+                                    <h4 class="card-title">Clean code</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-blue">
-                        <div class="card-content">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <h4 class="title-card">Development</h4>
-                            <p class="p-card centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                    <!-- CARD 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="feature-card">
+                                <div class="card-body">
+                                    <div class="fa-solid fa-compass-drafting"></div>
+                                    <h4 class="card-title">Webdesign</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-blue">
-                        <div class="card-content">
-                            <i class="fa-solid fa-bullhorn"></i>
-                            <h4 class="title-card">Branding</h4>
-                            <p class="p-card centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                    <!-- CARD 4 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="feature-card">
+                                <div class="card-body">
+                                    <div class="fa-solid fa-laptop-code"></div>
+                                    <h4 class="card-title">Development</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 5 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="feature-card">
+                                <div class="card-body">
+                                    <div class="fa-solid fa-bullhorn"></div>
+                                    <h4 class="card-title">Branding</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, tenetur atque reiciendis quaerat officia alias animi totam veniam exercitationem!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-    </body>
+    </main>
 
     <footer>
         
