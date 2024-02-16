@@ -221,6 +221,39 @@ img {
 }
 
 
+/* MAIN - testimonial */
+
+.testimonial {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.testimonial .container {
+    padding: 12px;
+}
+
+.row-testimonial {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-testimonial {
+    text-align: center;
+}
+
+.intro-testimonial h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.intro-testimonial h2 {
+    color: var(--purple);
+    font-size: 32px;
+    padding: 40px 0;
+}
+
+
+
 
 
 
