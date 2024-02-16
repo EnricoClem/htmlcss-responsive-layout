@@ -71,6 +71,13 @@ img {
     padding: 15px 60px;
 }
 
+.button-arrow {
+    background-color: var(--purple);
+    color: black;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+
 
 /* HEADER */
 
@@ -187,6 +194,21 @@ img {
     padding: 60px 0;
 }
 
+.planning-container {
+    padding: 12px;
+}
+
+.card-dev {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 
 
@@ -221,6 +243,15 @@ img {
         width: calc(6 * 100% / 12);
     }
 
+    .planning-img img {
+        max-width: 220px;
+    }
+
+    .planning-img {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 /* Larghezza TABLET o superiore */
@@ -240,6 +271,11 @@ img {
 
     .planning {
         padding-top: 120px;
+    }
+
+    .card-dev {
+        padding: 30px;
+        margin-left: 12px;
     }
 
 }
